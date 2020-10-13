@@ -32,7 +32,7 @@ export const BlogList = (props) => (
   <List {...props}>
     <Datagrid>
       <TextField source="title" />
-      <RichTextField source="body" />
+      {/* <RichTextField source="body" /> */}
       <TextField source="author" />
       <DateField source="createdate" />
       <EditButton label="" />

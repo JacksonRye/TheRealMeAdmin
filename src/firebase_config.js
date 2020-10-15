@@ -9,14 +9,17 @@ export const firebaseConfig = {
   storageBucket: "the-real-you-6297e.appspot.com",
   messagingSenderId: "98430719004",
   appId: "1:98430719004:web:2f3532e3f812a2cbe03bd9",
-  measurementId: "G-7TYR1X8S13",
+  measurementId: "G-7TYR1X8S13"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 export const options = {
-//   rootRef: "blogs/",
+  //   rootRef: "blogs/",
   app: firebaseApp,
   logging: true,
-  persistence: 'session',
+  persistence: "session",
+  dontAddIdFieldToDoc: false,
 };
+
+export const db = firebase.firestore();
